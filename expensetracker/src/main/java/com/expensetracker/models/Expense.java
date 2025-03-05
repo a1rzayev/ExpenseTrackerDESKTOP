@@ -3,18 +3,19 @@ package com.expensetracker.models;
 public class Expense {
     private int id;
     private String category;
-    private double amount;
     private String description;
+    private double amount;
     private String date;
 
-    public Expense(int id, String category, double amount, String description, String date) {
+    public Expense(int id, String category, String description, double amount, String date) {
         this.id = id;
         this.category = category;
-        this.amount = amount;
         this.description = description;
+        this.amount = amount;
         this.date = date;
     }
 
+    // Getters and setters
     public int getId() {
         return id;
     }
@@ -31,12 +32,16 @@ public class Expense {
         this.category = category;
     }
 
-    public double getAmount() {
-        return amount;
-    }
-
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getAmount() {
+        return amount;
     }
 
     public void setAmount(double amount) {

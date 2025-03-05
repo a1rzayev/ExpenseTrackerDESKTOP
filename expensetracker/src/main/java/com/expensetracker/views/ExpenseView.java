@@ -1,4 +1,4 @@
-package com.expensetracker.view;
+package com.expensetracker.views;
 
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
